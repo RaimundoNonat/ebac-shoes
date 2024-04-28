@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+header {
+    background-color: rgb(233, 115, 37);
+    padding: 10px 0;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container-header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+}
+
+.selecao {
+    display: flex;
+    align-items: center;
+}
+
+.selecao p {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.selecao p:active {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu>div img {
+    max-width: 1024px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.menu .sobre {
+    padding: 0px 50px;
+}
+
+.menu .sobre h3 {
+    color: rgb(233, 115, 37);
+    border-bottom: 1px solid rgb(233, 115, 37);
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.menu .sobre p {
+    font-weight: 300;
+}
+
+section h3 {
+    color: rgb(233, 115, 37);
+    border-bottom: 1px solid rgb(233, 115, 37);
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+section>div {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+section>div p {
+    font-weight: 300;
+    margin: 10px 0;
+
+}
+
+section>div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+section li {
+    list-style: none;
+}
+
+section>div button {
+    background-color: rgb(233, 115, 37);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+section>div button:active {
+    background-color: rgb(136, 61, 11);
+
+}
+
+@media screen and (max-width: 767px) {
+    .selecao {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .selecao p {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .menu {
+        display: block;
+
+    }
+    .menu .sobre {
+        padding: 0;
+    }
+    section > div {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu {
+        display: block;
+        margin: 50px 0;
+    }
+
+    .menu > div img {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .menu .sobre {
+        padding: 0;
+    }
+    section > div {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+    }
+
+}
